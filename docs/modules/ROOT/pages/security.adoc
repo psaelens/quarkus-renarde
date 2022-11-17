@@ -13,6 +13,10 @@ Start with importing the `renarde-security` module:
 [source,xml,subs=attributes+]
 ----
 <dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-security-jpa</artifactId>
+</dependency>
+<dependency>
   <groupId>io.quarkiverse.renarde</groupId>
   <artifactId>quarkus-renarde-security</artifactId>
   <version>{quarkus-renarde-version}</version>
