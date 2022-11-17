@@ -340,7 +340,7 @@ public class Login extends ControllerWithUser<User> {
             flash("messageType", "error");
             redirect(Application.class).index();
         }
-        User user = User.findForContirmation(confirmationCode);
+        User user = User.findForConfirmation(confirmationCode);
         if(user == null){
             flash("message", "Invalid confirmation code");
             flash("messageType", "error");
